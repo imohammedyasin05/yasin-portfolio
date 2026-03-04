@@ -13,7 +13,7 @@ export default defineConfig(({ mode }) => {
 
     preview: {
       host: '0.0.0.0',
-      allowedHosts: ['.kuberns.cloud']
+      allowedHosts: ['.kuberns.cloud', 'yasin-portfolio-main-8da9b23.kuberns.cloud']
     },
 
     plugins: [react()],
