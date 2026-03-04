@@ -1,20 +1,68 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# SK MD YASIN - Portfolio
 
-# Run and deploy your AI Studio app
+A modern, responsive portfolio website built with React, TypeScript, and Tailwind CSS.
 
-This contains everything you need to run your app locally.
+## 🚀 Features
 
-View your app in AI Studio: https://ai.studio/apps/drive/1Cs1E3hixP6v_9iBLpNdQ-bk7qYEBgveV
+- **Hero Section** - Interactive introduction with profile image
+- **About Me** - Personal background and education
+- **Skills** - Technical and soft skills showcase
+- **Projects** - Featured projects with GitHub links
+- **GitHub Activity** - Open-source contributions section
+- **Currently Learning** - Continuous learning showcase
+- **Contact** - Working contact form with email validation
 
-## Run Locally
+## 🛠️ Tech Stack
 
-**Prerequisites:**  Node.js
+- React 19
+- TypeScript
+- Vite
+- Tailwind CSS
+- Lucide React (icons)
+- Formspree (contact form)
 
+## 📦 Installation
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+## 🔧 Build for Production
+
+```bash
+# Build the project
+npm run build
+
+# Preview production build
+npm run preview
+```
+
+## 📁 Project Structure
+
+```
+├── components/       # React components
+│   ├── Hero.tsx
+│   ├── About.tsx
+│   ├── Skills.tsx
+│   ├── Projects.tsx
+│   ├── GitHubSection.tsx
+│   ├── Contact.tsx
+│   └── Footer.tsx
+├── constants.ts      # Site data and configuration
+├── types.ts          # TypeScript interfaces
+└── public/          # Static assets
+```
+
+## 🔗 Links
+
+- **GitHub:** https://github.com/imohammedyasin
+- **LinkedIn:** https://www.linkedin.com/in/shaikmohammedyasin
+- **Email:** shaikyasin.dev@gmail.com
+
+## 📄 License
+
+MIT License - Feel free to use this template for your own portfolio!
