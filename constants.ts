@@ -4,11 +4,11 @@ import { Project, SkillCategory, Achievement } from './types';
 export const PERSONAL_INFO = {
   name: "SK MD YASIN",
   brand: "imohammedyasin",
-  role: "Full-Stack Developer | CSE Student",
-  tagline: "Full-Stack Developer | CSE Student | AI & Web Systems Builder",
-  subtext: "I build full-stack web applications and AI-powered systems that solve real-world problems. Currently focused on MERN stack development, machine learning integration, and scalable system design.",
-  mission: "Build skills, create value, and grow daily.",
-  quote: "Discipline creates freedom.",
+  role: "AI + Full-Stack Systems Engineer",
+  tagline: "AI + Full-Stack Systems Engineer | Systems Builder",
+  subtext: "I build AI-powered systems and scalable web platforms that solve real-world problems. Engineering high-impact, real-time solutions from architecture to deployment.",
+  mission: "I architect scalable backend systems, integrate AI models for predictive analysis, and build high-performance web platforms.",
+  quote: "Discipline creates freedom. Building real-world products with measurable impact.",
   email: "shaikyasin.dev@gmail.com"
 };
 
@@ -29,33 +29,70 @@ export const HERO_IMAGES = [
 export const PROJECTS: Project[] = [
   {
     title: "ClimateRisk AI",
-    description: "A full-stack machine learning platform that analyzes historical climate data, predicts future temperature trends, calculates climate risk scores, and generates AI-powered policy recommendations. Built using a React dashboard, Node.js backend, and a Python ML microservice with scikit-learn.",
-    tech: ["React", "Node.js", "Express", "Python", "Flask", "scikit-learn", "Chart.js", "Gemini AI"],
+    tagline: "AI-powered climate risk prediction and policy engine.",
+    bullets: [
+      "Built a machine learning microservice to predict temperature anomalies using historical climate datasets.",
+      "Engineered a scalable Node.js backend to orchestrate data flow between the AI engine and the frontend.",
+      "Designed an interactive React dashboard with Chart.js to visualize real-time risk scores and trends.",
+      "Optimized API response times for large datasets to ensure a seamless user experience."
+    ],
+    tech: ["React", "Node.js", "Python", "Scikit-learn", "System Design", "LLM"],
     github: "https://github.com/imohammedyasin05/ClimateRisk-AI",
     featured: true
   },
   {
-    title: "LearnHub",
-    description: "A full-stack LMS platform where users can enroll in courses, watch video lectures, track their learning progress, and generate certificates.",
-    tech: ["React", "Node.js", "Express", "MongoDB"],
-    github: "https://github.com/imohammedyasin/ShaikMohammedYasin"
+    title: "Rapidaid",
+    tagline: "AI-driven emergency response orchestration platform.",
+    bullets: [
+      "Engineered a real-time dispatch system using WebSockets for sub-second emergency routing.",
+      "Integrated Gemini AI to parse unstructured emergency text into structured priority categories.",
+      "Built a scalable backend architecture capable of handling high-throughput concurrent requests during crises.",
+      "Designed a mission-control UI for rapid decision-making by emergency operators."
+    ],
+    tech: ["React", "Node.js", "Socket.io", "Gemini AI", "MongoDB"],
+    github: "https://github.com/imohammedyasin05/Rapidaid",
+    featured: true
   },
   {
-    title: "PawPrint AI",
-    description: "An AI-powered web application that identifies dog breeds from images using transfer learning models such as ResNet-50 and Vision Transformers.",
-    tech: ["React", "Flask", "Hugging Face API", "Deep Learning"],
-    github: "https://github.com/imohammedyasin/PawPrint-AI"
+    title: "CareQueue",
+    tagline: "AI Hospital Queue Optimization System.",
+    bullets: [
+      "Built a predictive triage system to estimate patient wait times dynamically.",
+      "Engineered scalable API endpoints to sync real-time hospital resource availability.",
+      "Optimized queue flow logic to reduce average patient wait time via intelligent routing algorithms."
+    ],
+    tech: ["Next.js", "Node.js", "Python", "ML Algorithms"],
+    github: "https://github.com/imohammedyasin05/CareQueue"
+  },
+  {
+    title: "TCS NQT Smart Practice Platform",
+    tagline: "High-performance assessment simulator for tech recruitment.",
+    bullets: [
+      "Designed a scalable, real-time assessment simulator mimicking enterprise testing environments.",
+      "Engineered dynamic code execution and automated grading pipelines.",
+      "Optimized frontend rendering for zero-latency question transitions and strict timer synchronization."
+    ],
+    tech: ["React", "Node.js", "System Architecture", "Tailwind"],
+    github: "https://github.com/imohammedyasin05/tcs-nqt-smart-practice-platform"
   }
 ];
 
 export const SKILL_CATEGORIES: SkillCategory[] = [
   {
-    title: "Technical Stack",
-    skills: ["HTML5", "CSS3", "JavaScript (ES6+)", "React", "Node.js", "Express", "MongoDB", "Git & GitHub", "Bootstrap", "Material UI"]
+    title: "Frontend",
+    skills: ["React", "TypeScript", "Tailwind CSS", "Next.js"]
   },
   {
-    title: "Soft Skills",
-    skills: ["Problem Solving", "Content Creation", "Communication", "Discipline", "Systems Thinking"]
+    title: "Backend",
+    skills: ["Node.js", "Express", "Python", "Flask", "MongoDB", "PostgreSQL"]
+  },
+  {
+    title: "AI / ML",
+    skills: ["Scikit-learn", "LangChain", "Hugging Face", "LLM Integrations"]
+  },
+  {
+    title: "Tools & Architecture",
+    skills: ["Git", "System Design", "REST APIs", "Microservices", "WebSockets"]
   }
 ];
 

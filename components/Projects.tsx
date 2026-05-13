@@ -6,7 +6,7 @@ import { Github, ExternalLink, Star } from 'lucide-react';
 const ProjectCard: React.FC<{ project: Project; featured?: boolean }> = ({ project, featured }) => {
   return (
     <div
-      className={`group bg-brand-charcoal border border-white/5 rounded-xl overflow-hidden hover:border-brand-blue/40 transition-all duration-300 flex flex-col ${featured ? 'md:col-span-2' : ''}`}
+      className={`group bg-brand-charcoal border border-white/5 rounded-xl overflow-hidden hover:border-brand-blue/40 hover:-translate-y-1 hover:shadow-2xl hover:shadow-brand-blue/10 transition-all duration-300 flex flex-col ${featured ? 'md:col-span-2' : ''}`}
     >
       {featured && (
         <div className="px-8 pt-8 pb-0">
@@ -34,10 +34,15 @@ const ProjectCard: React.FC<{ project: Project; featured?: boolean }> = ({ proje
           )}
         </div>
 
-        {/* Project Description */}
-        <p className="text-brand-silver mb-6 leading-relaxed">
-          {project.description}
+        {/* Project Tagline and Bullets */}
+        <p className="text-white font-medium mb-4 text-lg">
+          {project.tagline}
         </p>
+        <ul className="text-brand-silver mb-6 space-y-2 list-disc list-outside ml-4">
+          {project.bullets.map((bullet, idx) => (
+            <li key={idx} className="text-sm leading-relaxed">{bullet}</li>
+          ))}
+        </ul>
 
         {/* Tech Stack */}
         <div className="flex flex-wrap gap-2 mb-6">
