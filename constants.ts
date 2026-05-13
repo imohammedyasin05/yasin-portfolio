@@ -31,25 +31,24 @@ export const PROJECTS: Project[] = [
     title: "ClimateRisk AI",
     tagline: "AI-powered climate risk prediction and policy engine.",
     bullets: [
-      "Built a machine learning microservice to predict temperature anomalies using historical climate datasets.",
-      "Engineered a scalable Node.js backend to orchestrate data flow between the AI engine and the frontend.",
-      "Designed an interactive React dashboard with Chart.js to visualize real-time risk scores and trends.",
-      "Optimized API response times for large datasets to ensure a seamless user experience."
+      "Built a machine learning microservice to analyze 150+ years of climate data and predict temperature anomalies.",
+      "Designed a Climate Risk Scoring system to quantify environmental impact using predictive modeling.",
+      "Integrated LLM-based explanations to convert complex climate insights into simple, actionable outputs.",
+      "Developed an interactive React dashboard for real-time visualization of climate trends and risk scores."
     ],
-    tech: ["React", "Node.js", "Python", "Scikit-learn", "System Design", "LLM"],
+    tech: ["React", "Node.js", "Python", "Scikit-learn", "LLM", "System Design"],
     github: "https://github.com/imohammedyasin05/ClimateRisk-AI",
     featured: true
   },
   {
     title: "Rapidaid",
-    tagline: "AI-driven emergency response orchestration platform.",
+    tagline: "AI-Powered Emergency Response Platform",
     bullets: [
-      "Engineered a real-time dispatch system using WebSockets for sub-second emergency routing.",
-      "Integrated Gemini AI to parse unstructured emergency text into structured priority categories.",
-      "Built a scalable backend architecture capable of handling high-throughput concurrent requests during crises.",
-      "Designed a mission-control UI for rapid decision-making by emergency operators."
+      "Designed a real-time emergency response system to optimize incident handling and reduce response delays.",
+      "Engineered scalable backend services to process live requests and prioritize critical cases dynamically.",
+      "Integrated AI-based decision logic to assist in emergency prioritization and routing."
     ],
-    tech: ["React", "Node.js", "Socket.io", "Gemini AI", "MongoDB"],
+    tech: ["TypeScript", "React", "Node.js", "System Design", "Real-Time Systems"],
     github: "https://github.com/imohammedyasin05/Rapidaid",
     featured: true
   },

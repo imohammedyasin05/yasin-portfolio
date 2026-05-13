@@ -13,13 +13,10 @@ const About: React.FC = () => {
             <h2 className="text-3xl font-bold text-white mb-8">About Me</h2>
             <div className="space-y-6 text-brand-silver leading-relaxed">
               <p>
-                Hello, I'm <strong className="text-white">{PERSONAL_INFO.name}</strong>. I architect scalable backend systems, integrate AI models for predictive analysis, and build high-performance web platforms.
+                Hello, I'm <strong className="text-white">{PERSONAL_INFO.name}</strong>. I design and build full-stack systems with a focus on scalability, performance, and real-world impact. I work on integrating AI models for predictive analysis and building applications that go beyond basic CRUD functionality.
               </p>
               <p>
-                My technical focus bridges the <strong className="text-white">MERN stack</strong>, <strong className="text-white">Python</strong>, and <strong className="text-white">AI integrations</strong>—allowing me to design end-to-end systems rather than just writing code.
-              </p>
-              <p>
-                <strong>My mindset:</strong> Discipline creates freedom. I am driven by the challenge of building real-world products that have measurable impact, focusing on robust system design and clean architecture.
+                My technical focus bridges the <strong className="text-white">MERN stack</strong>, <strong className="text-white">Python</strong>, and <strong className="text-white">AI integrations</strong>—allowing me to develop end-to-end solutions from frontend to backend to intelligent systems.
               </p>
             </div>
 
