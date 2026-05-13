@@ -41,10 +41,14 @@ const ProjectCard: React.FC<{ project: Project; featured?: boolean }> = ({ proje
               href={project.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 bg-white/5 rounded-full hover:bg-white/10 hover:text-white text-gray-400 transition-colors flex-shrink-0"
-              aria-label="View on GitHub"
+              className="relative group/gh p-2 bg-white/5 rounded-full hover:bg-brand-blue/20 hover:text-brand-blue hover:scale-110 hover:shadow-[0_0_12px_rgba(59,130,246,0.4)] text-gray-400 transition-all duration-200 flex-shrink-0"
+              aria-label="View Source Code"
             >
               <Github className="w-5 h-5" />
+              {/* Tooltip */}
+              <span className="pointer-events-none absolute -bottom-8 right-0 whitespace-nowrap rounded-md bg-gray-900 border border-white/10 px-2 py-1 text-xs text-gray-300 opacity-0 group-hover/gh:opacity-100 transition-opacity duration-200 z-10">
+                View Source Code
+              </span>
             </a>
           )}
         </div>
@@ -62,25 +66,15 @@ const ProjectCard: React.FC<{ project: Project; featured?: boolean }> = ({ proje
         </ul>
 
         {/* Tech Stack */}
-        <div className="flex flex-wrap gap-2 mb-5">
+        <div className="flex flex-wrap gap-2 mb-4">
           {project.tech.map((tech, tIndex) => (
             <TechBadge key={tIndex} label={tech} />
           ))}
         </div>
 
-        {/* Action Buttons */}
-        <div className="flex flex-wrap gap-3 mt-auto">
-          {project.github && (
-            <a
-              href={project.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-white border border-white/10 rounded-lg hover:bg-white/5 transition-colors"
-            >
-              <Github className="w-4 h-4" /> GitHub
-            </a>
-          )}
-          {project.liveDemo && (
+        {/* Live Demo (only shown when available) */}
+        {project.liveDemo && (
+          <div className="mt-auto pt-2">
             <a
               href={project.liveDemo}
               target="_blank"
@@ -89,8 +83,8 @@ const ProjectCard: React.FC<{ project: Project; featured?: boolean }> = ({ proje
             >
               <ExternalLink className="w-4 h-4" /> Live Demo
             </a>
-          )}
-        </div>
+          </div>
+        )}
       </div>
 
       {/* Decorative bottom bar */}
